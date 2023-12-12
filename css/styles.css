@@ -1,0 +1,134 @@
+
+body{
+    text-decoration: none;
+    color: darkslategray;
+
+
+    
+
+}
+
+header{
+    background-color: burlywood;
+}
+p{
+    color: darkslategrey;
+
+}
+
+h1{
+    color: darkslategrey;
+    padding: 10px;
+    margin-top: 40px;
+}
+a{
+    color: white;
+}
+/*reseteo /Box model/ flexbox/ grid*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*estilos de header*/
+
+header{
+    height: 200px; ;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 2rem;
+
+
+}
+/*ruta de especificidad*/
+header h1{
+    font-size: 24px;
+}
+
+header div img{
+    width: 100%;
+}
+
+header nav ul {
+    padding: 40px;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+nav{ 
+    
+    position: fixed;
+    top: 0;
+    left: 700px;
+    bottom: 700px;
+    z-index: 1;
+
+}
+
+/*estilos de main*/
+
+main{
+    color: darkgrey;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: ;
+    grid-template-rows: ;
+
+    
+
+}
+main h2{
+    font-size: 2rem;
+    color: darkgreen;
+}
+
+
+
+
+
+footer{
+    background-color: burlywood;
+}
+
+
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p{
+    font-weight: 200;
+}
+img{
+    width: 50%;
+
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer iframe{
+    padding: 10px;
+    margin: 30px;
+}
+
+/*mq para tablet*/
+ @media screen and (min-width:600px){
+    body .imag{
+        background-color: beige;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2 50%) 
+    }
+ }
+ /*mq desktop*/
+ @media screen and (min-width:1024px)
+ {
+    header{
+        flex-direction: row;
+    }
+ }
+   
+    
